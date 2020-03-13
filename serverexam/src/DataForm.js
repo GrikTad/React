@@ -3,39 +3,39 @@ import './DataForm.css'
 
 export const DataForm = ({ data }) => {
     return (
-        <div className="grid-container">
+       
+        <div className="grid-container"> 
+        
             {data.map(element=>
                 <div key={element.email} className="grid-item">
+                    <img className="logo" src="https://i7.pngguru.com/preview/831/88/865/user-profile-computer-icons-user-interface-mystique.jpg" alt="logo"/>
+                    
                     <p>
-                        Full Name: {element.name}
+                    
+                       <h3> Full Name:  {element.name} </h3>
                     </p>
                     <p>
-                        UserName:
-                        {element.username}
+                        UserName: {element.username}
                     </p>
                     <p>
-                        Address:  
-                        {element.address.street}
+                        Address: {element.address.street}
                     </p>
                     <p>
-                        gmail:
-                        {element.email}
-                     <a href={`mailto:${element.email}`}> <img src="https://cdn.glitch.com/ee4fc72d-c4ac-4e9c-8fc2-0f5915855545%2Fgmail.png?v=1583910272873"/></a>
+                        gmail: <a href={`mailto:${element.email}`}>{element.email} <img src="https://cdn.glitch.com/ee4fc72d-c4ac-4e9c-8fc2-0f5915855545%2Fgmail.png?v=1583910272873"/></a>
 
                     </p>
                     <p>
-                        Company:{element.company.name}
+                        Company: {element.company.name}
                     </p>
                     <p>
-                        Phone:
-                        {element.phone}
+                        Phone: {element.phone}
                     </p>
                     <p>
-                        Website:
-                        {element.website}
+                        Website: {element.website}
                     </p>
                     </div>)}
         </div>
+       
     );
 };
 

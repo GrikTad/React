@@ -12,26 +12,26 @@ export const DataForm = ({ data }) => {
                     
                     <p>
                     
-                       <h3> Full Name:  {element.name} </h3>
+                        Full Name: <font color="red"> {element.name} </font>
                     </p>
                     <p>
-                        UserName: {element.username}
+                        UserName: <font color="green">{element.username} </font>
                     </p>
                     <p>
-                        Address: {element.address.street}
+                        Address: <font color="blue">{element.address.street}></font>
                     </p>
                     <p>
-                        gmail: <a href={`mailto:${element.email}`}>{element.email} <img src="https://cdn.glitch.com/ee4fc72d-c4ac-4e9c-8fc2-0f5915855545%2Fgmail.png?v=1583910272873"/></a>
+                     gmail: <a href={`mailto:${element.email}`}>{element.email} <img src="https://cdn.glitch.com/ee4fc72d-c4ac-4e9c-8fc2-0f5915855545%2Fgmail.png?v=1583910272873"/></a>
 
                     </p>
                     <p>
-                        Company: {element.company.name}
+                        Company: <font color="yellow">{element.company.name}</font>
                     </p>
                     <p>
-                        Phone: {element.phone}
+                       Phone: <font color="black">{element.phone} </font>
                     </p>
                     <p>
-                        Website: {element.website}
+                        Website: <a href={`https://${element.website}`}><font> {element.website} </font></a>
                     </p>
                     </div>)}
         </div>
